@@ -3,37 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=main.html" />
-    <title>Detail Project | iyaw.projecto</title>
+    <title>Watashi no portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .fade-in { animation: fadeIn 0.8s ease-out forwards; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-white text-slate-900 overflow-x-hidden">
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
 
-    <!-- Simple Header -->
-    <nav class="sticky top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition font-medium group">
-                <svg class="w-5 h-5 group-hover:-translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-            </a>
-            <span class="text-sm font-bold tracking-tight">iyaw.projecto<span class="text-blue-600">.</span></span>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tight">iyaw.projecto<span class="text-blue-600">.</span></span>
+            <div class="space-x-8 text-sm font-medium hidden md:block text-slate-600">
+                <a href="#hero" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skill</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Project</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Kontak</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main id="main.html" class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  
-    </main>
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <p class="text-blue-600 font-semibold mb-3 tracking-wide uppercase text-sm">Welcome to my space</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Halo, saya <span class="gradient-text">Profesional IT</span> yang suka eksplorasi.
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-2xl leading-relaxed">
+                    Fokus di bidang networking tapi punya passion besar di dunia kreatif. Dari konfigurasi router sampe streaming, saya senang belajar hal baru dan nyelesain masalah secara efektif.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="https://www.Instagram.com/riku.personal.id" target="_blank" class="bg-slate-900 text-white px-8 py-3 rounded-full font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-200">
+                        Ayo Ngobrol
+                    </a>
+                    <a href="#projects" class="border border-slate-200 bg-white px-8 py-3 rounded-full font-medium hover:bg-slate-50 transition">
+                        Lihat Karya
+                    </a>
+                </div>
+            </div>
+            <div class="w-48 h-48 md:w-64 md:h-64 bg-slate-200 rounded-3xl rotate-3 flex items-center justify-center overflow-hidden border-4 border-white shadow-xl">
+                <!-- Fallback Icon if no image -->
+                <svg class="w-24 h-24 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Apa yang Saya Bisa?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-200 hover:shadow-md transition">
+                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">MikroTik</h3>
+                    <p class="text-sm text-slate-500">Routing, switching, dan optimasi jaringan lokal.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-200 hover:shadow-md transition">
+                    <div class="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">Cisco</h3>
+                    <p class="text-sm text-slate-500">Konfigurasi infrastruktur jaringan skala menengah.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-200 hover:shadow-md transition">
+                    <div class="bg-red-100 text-red-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">Live Streamer</h3>
+                    <p class="text-sm text-slate-500">Setup OBS, encoding, dan manajemen interaksi audiens.</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-200 hover:shadow-md transition">
+                    <div class="bg-green-100 text-green-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">Editor</h3>
+                    <p class="text-sm text-slate-500">Editing video konten kreatif untuk berbagai platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Project Terpilih</h2>
+                    <p class="text-slate-500">Beberapa hal yang pernah saya buat dan kembangkan. (Klik kartu untuk detail)</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 (Bisa diklik) -->
+                <a href="mikrotik.html" class="group block bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <div class="w-full h-full flex items-center justify-center text-slate-400 group-hover:scale-110 transition duration-500">
+                            [Gambar Project Jaringan]
+                        </div>
+                        <div class="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition duration-300 flex items-center justify-center">
+                            <span class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition duration-300">Lihat Project &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Networking</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 group-hover:text-blue-600 transition">Hotspot Management System</h3>
+                        <p class="text-slate-600 text-sm mb-4">Mengintegrasikan MikroTik dengan sistem login user yang aman untuk kafe lokal.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-md">Winbox</span>
+                            <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-md">RADIUS</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 (Bisa diklik) -->
+                <a href="https://youtube.com/@rikuzawa" target="_blank" class="group block bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <div class="w-full h-full flex items-center justify-center text-slate-400 group-hover:scale-110 transition duration-500">
+                            [Gambar Project Kreatif]
+                        </div>
+                        <div class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/10 transition duration-300 flex items-center justify-center">
+                            <span class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition duration-300">Lihat Konten &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-red-600 uppercase tracking-widest">Creative</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 group-hover:text-red-600 transition">Live Streaming Setup</h3>
+                        <p class="text-slate-600 text-sm mb-4">Optimasi bitrate dan overlay interaktif untuk channel gaming dengan 5k+ followers.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-md">OBS Studio</span>
+                            <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-md">Premiere Pro</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-slate-900 text-white rounded-t-[3rem]">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-16">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-6">Tertarik buat kolaborasi?</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Saya selalu terbuka untuk diskusi project baru atau sekedar tanya-tanya soal IT dan konten. Jangan sungkan buat hubungi saya ya!
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        </div>
+                        <span>rikuzawa.official@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                        </div>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-6">Social Media</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="https://www.Instagram.com/riku.personal.id" target="_blank" class="p-4 bg-slate-800 rounded-2xl hover:bg-slate-700 transition flex items-center gap-3">
+                        <span class="text-sm">Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/evan-satria-ramadhan/" target="_blank" class="p-4 bg-slate-800 rounded-2xl hover:bg-slate-700 transition flex items-center gap-3">
+                        <span class="text-sm">LinkedIn</span>
+                    </a>
+                    <a href="#" class="p-4 bg-slate-800 rounded-2xl hover:bg-slate-700 transition flex items-center gap-3">
+                        <span class="text-sm">Twitter/X</span>
+                    </a>
+                    <a href="https://www.youtube.com/@rikuzawa" target="_blank" class="p-4 bg-slate-800 rounded-2xl hover:bg-slate-700 transition flex items-center gap-3">
+                        <span class="text-sm">YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto border-t border-slate-800 mt-20 pt-8 text-center text-slate-500 text-sm">
+            &copy; 2024 Nama Kamu. Dibuat dengan semangat.
+        </div>
+    </section>
 
 </body>
 </html>
